@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medicines",
+  "info": {
+    "singularName": "medicine",
+    "pluralName": "medicines",
+    "displayName": "Medicines"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MedicineID": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "BrandName": {
+      "type": "string",
+      "required": true
+    },
+    "GenericName": {
+      "type": "string",
+      "required": true
+    },
+    "DosageForm": {
+      "type": "string",
+      "required": true
+    },
+    "Manufacturer": {
+      "type": "string",
+      "required": true
+    },
+    "Strength": {
+      "type": "string",
+      "required": true
+    },
+    "medicine_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::medicine-category.medicine-category",
+      "inversedBy": "medicines"
+    },
+    "stock_inventories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stock-inventory.stock-inventory",
+      "mappedBy": "medicine"
+    },
+    "purchase_order_lines": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::purchase-order-line.purchase-order-line",
+      "mappedBy": "medicine"
+    }
+  }
+}

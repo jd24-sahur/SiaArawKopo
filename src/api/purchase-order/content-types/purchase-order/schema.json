@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchase_orders",
+  "info": {
+    "singularName": "purchase-order",
+    "pluralName": "purchase-orders",
+    "displayName": "Purchase_Orders"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OrderDate": {
+      "type": "date"
+    },
+    "TotalAmount": {
+      "type": "integer",
+      "required": true
+    },
+    "PaymentStatus": {
+      "type": "boolean",
+      "required": true
+    },
+    "RecievedDate": {
+      "type": "boolean"
+    },
+    "purchase_order_lines": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::purchase-order-line.purchase-order-line",
+      "inversedBy": "purchase_orders"
+    },
+    "suppliers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::supplier.supplier",
+      "mappedBy": "purchase_order"
+    }
+  }
+}
