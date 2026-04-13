@@ -32,11 +32,11 @@
       "target": "api::medicine.medicine",
       "inversedBy": "purchase_order_lines"
     },
-    "purchase_orders": {
+    "purchase_order": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::purchase-order.purchase-order",
-      "mappedBy": "purchase_order_lines"
+      "inversedBy": "purchase_order_lines"
     }
   }
 }

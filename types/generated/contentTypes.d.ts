@@ -535,8 +535,8 @@ export interface ApiPurchaseOrderLinePurchaseOrderLine
       Schema.Attribute.Private;
     medicine: Schema.Attribute.Relation<'manyToOne', 'api::medicine.medicine'>;
     publishedAt: Schema.Attribute.DateTime;
-    purchase_orders: Schema.Attribute.Relation<
-      'manyToMany',
+    purchase_order: Schema.Attribute.Relation<
+      'manyToOne',
       'api::purchase-order.purchase-order'
     >;
     QuantityOrdered: Schema.Attribute.BigInteger & Schema.Attribute.Required;
@@ -573,11 +573,11 @@ export interface ApiPurchaseOrderPurchaseOrder
     PaymentStatus: Schema.Attribute.Boolean & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     purchase_order_lines: Schema.Attribute.Relation<
-      'manyToMany',
+      'oneToMany',
       'api::purchase-order-line.purchase-order-line'
     >;
     RecievedDate: Schema.Attribute.Boolean;
-    suppliers: Schema.Attribute.Relation<'oneToMany', 'api::supplier.supplier'>;
+    supplier: Schema.Attribute.Relation<'manyToOne', 'api::supplier.supplier'>;
     TotalAmount: Schema.Attribute.Integer & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -650,8 +650,8 @@ export interface ApiSupplierSupplier extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
     publishedAt: Schema.Attribute.DateTime;
-    purchase_order: Schema.Attribute.Relation<
-      'manyToOne',
+    purchase_orders: Schema.Attribute.Relation<
+      'oneToMany',
       'api::purchase-order.purchase-order'
     >;
     SupplierName: Schema.Attribute.String & Schema.Attribute.Required;

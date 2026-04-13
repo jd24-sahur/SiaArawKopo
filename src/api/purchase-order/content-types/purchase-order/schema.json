@@ -27,15 +27,15 @@
     },
     "purchase_order_lines": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::purchase-order-line.purchase-order-line",
-      "inversedBy": "purchase_orders"
-    },
-    "suppliers": {
-      "type": "relation",
       "relation": "oneToMany",
-      "target": "api::supplier.supplier",
+      "target": "api::purchase-order-line.purchase-order-line",
       "mappedBy": "purchase_order"
+    },
+    "supplier": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::supplier.supplier",
+      "inversedBy": "purchase_orders"
     }
   }
 }

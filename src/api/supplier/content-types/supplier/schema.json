@@ -34,11 +34,11 @@
       "required": true,
       "unique": true
     },
-    "purchase_order": {
+    "purchase_orders": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::purchase-order.purchase-order",
-      "inversedBy": "suppliers"
+      "mappedBy": "supplier"
     }
   }
 }
