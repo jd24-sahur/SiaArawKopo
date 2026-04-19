@@ -35,7 +35,7 @@
       "inversedBy": "purchase_orders"
     },
     "RecievedDate": {
-      "type": "date"
+      "type": "boolean"
     }
   }
 }

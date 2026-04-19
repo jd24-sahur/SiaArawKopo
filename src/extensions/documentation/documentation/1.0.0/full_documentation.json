@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-04-19T20:23:13.307Z"
+    "x-generation-date": "2026-04-19T20:44:54.453Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5479,8 +5479,7 @@
                                 }
                               },
                               "RecievedDate": {
-                                "type": "string",
-                                "format": "date"
+                                "type": "boolean"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -6904,8 +6903,7 @@
                             }
                           },
                           "RecievedDate": {
-                            "type": "string",
-                            "format": "date"
+                            "type": "boolean"
                           },
                           "createdAt": {
                             "type": "string",
@@ -7265,8 +7263,7 @@
                 "example": "string or id"
               },
               "RecievedDate": {
-                "type": "string",
-                "format": "date"
+                "type": "boolean"
               },
               "locale": {
                 "type": "string"
@@ -8287,8 +8284,7 @@
                       }
                     },
                     "RecievedDate": {
-                      "type": "string",
-                      "format": "date"
+                      "type": "boolean"
                     },
                     "createdAt": {
                       "type": "string",
@@ -8458,8 +8454,7 @@
             }
           },
           "RecievedDate": {
-            "type": "string",
-            "format": "date"
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -9545,8 +9540,7 @@
                           }
                         },
                         "RecievedDate": {
-                          "type": "string",
-                          "format": "date"
+                          "type": "boolean"
                         },
                         "createdAt": {
                           "type": "string",
@@ -10870,8 +10864,7 @@
                           }
                         },
                         "RecievedDate": {
-                          "type": "string",
-                          "format": "date"
+                          "type": "boolean"
                         },
                         "createdAt": {
                           "type": "string",
@@ -12327,8 +12320,7 @@
                   }
                 },
                 "RecievedDate": {
-                  "type": "string",
-                  "format": "date"
+                  "type": "boolean"
                 },
                 "createdAt": {
                   "type": "string",
