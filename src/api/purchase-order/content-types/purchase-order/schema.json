@@ -22,9 +22,6 @@
       "type": "boolean",
       "required": true
     },
-    "RecievedDate": {
-      "type": "boolean"
-    },
     "purchase_order_lines": {
       "type": "relation",
       "relation": "oneToMany",
@@ -36,6 +33,9 @@
       "relation": "manyToOne",
       "target": "api::supplier.supplier",
       "inversedBy": "purchase_orders"
+    },
+    "RecievedDate": {
+      "type": "date"
     }
   }
 }

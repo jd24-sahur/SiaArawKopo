@@ -576,7 +576,7 @@ export interface ApiPurchaseOrderPurchaseOrder
       'oneToMany',
       'api::purchase-order-line.purchase-order-line'
     >;
-    RecievedDate: Schema.Attribute.Boolean;
+    RecievedDate: Schema.Attribute.Date;
     supplier: Schema.Attribute.Relation<'manyToOne', 'api::supplier.supplier'>;
     TotalAmount: Schema.Attribute.Integer & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;

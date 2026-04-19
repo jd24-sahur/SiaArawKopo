@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f5f9;
+}
+
+.auth-container {
+  max-width: 300px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}

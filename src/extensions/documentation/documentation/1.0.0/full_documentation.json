@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-04-13T16:56:10.571Z"
+    "x-generation-date": "2026-04-19T20:23:13.307Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5331,9 +5331,6 @@
                               "PaymentStatus": {
                                 "type": "boolean"
                               },
-                              "RecievedDate": {
-                                "type": "boolean"
-                              },
                               "purchase_order_lines": {
                                 "type": "array",
                                 "items": {
@@ -5480,6 +5477,10 @@
                                     }
                                   }
                                 }
+                              },
+                              "RecievedDate": {
+                                "type": "string",
+                                "format": "date"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -6755,9 +6756,6 @@
                           "PaymentStatus": {
                             "type": "boolean"
                           },
-                          "RecievedDate": {
-                            "type": "boolean"
-                          },
                           "purchase_order_lines": {
                             "type": "array",
                             "items": {
@@ -6904,6 +6902,10 @@
                                 }
                               }
                             }
+                          },
+                          "RecievedDate": {
+                            "type": "string",
+                            "format": "date"
                           },
                           "createdAt": {
                             "type": "string",
@@ -7237,9 +7239,6 @@
               "PaymentStatus": {
                 "type": "boolean"
               },
-              "RecievedDate": {
-                "type": "boolean"
-              },
               "purchase_order_lines": {
                 "type": "array",
                 "items": {
@@ -7264,6 +7263,10 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "RecievedDate": {
+                "type": "string",
+                "format": "date"
               },
               "locale": {
                 "type": "string"
@@ -7349,9 +7352,6 @@
             "type": "integer"
           },
           "PaymentStatus": {
-            "type": "boolean"
-          },
-          "RecievedDate": {
             "type": "boolean"
           },
           "purchase_order_lines": {
@@ -8139,9 +8139,6 @@
                     "PaymentStatus": {
                       "type": "boolean"
                     },
-                    "RecievedDate": {
-                      "type": "boolean"
-                    },
                     "purchase_order_lines": {
                       "type": "array",
                       "items": {
@@ -8288,6 +8285,10 @@
                           }
                         }
                       }
+                    },
+                    "RecievedDate": {
+                      "type": "string",
+                      "format": "date"
                     },
                     "createdAt": {
                       "type": "string",
@@ -8455,6 +8456,10 @@
                 "type": "string"
               }
             }
+          },
+          "RecievedDate": {
+            "type": "string",
+            "format": "date"
           },
           "createdAt": {
             "type": "string",
@@ -9392,9 +9397,6 @@
                         "PaymentStatus": {
                           "type": "boolean"
                         },
-                        "RecievedDate": {
-                          "type": "boolean"
-                        },
                         "purchase_order_lines": {
                           "type": "array",
                           "items": {
@@ -9541,6 +9543,10 @@
                               }
                             }
                           }
+                        },
+                        "RecievedDate": {
+                          "type": "string",
+                          "format": "date"
                         },
                         "createdAt": {
                           "type": "string",
@@ -10716,9 +10722,6 @@
                         "PaymentStatus": {
                           "type": "boolean"
                         },
-                        "RecievedDate": {
-                          "type": "boolean"
-                        },
                         "purchase_order_lines": {
                           "type": "array",
                           "items": {
@@ -10865,6 +10868,10 @@
                               }
                             }
                           }
+                        },
+                        "RecievedDate": {
+                          "type": "string",
+                          "format": "date"
                         },
                         "createdAt": {
                           "type": "string",
@@ -11339,9 +11346,6 @@
                   "type": "integer"
                 },
                 "PaymentStatus": {
-                  "type": "boolean"
-                },
-                "RecievedDate": {
                   "type": "boolean"
                 },
                 "purchase_order_lines": {
@@ -12321,6 +12325,10 @@
                       }
                     }
                   }
+                },
+                "RecievedDate": {
+                  "type": "string",
+                  "format": "date"
                 },
                 "createdAt": {
                   "type": "string",
